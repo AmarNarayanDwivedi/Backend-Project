@@ -1,8 +1,10 @@
 import { connect } from "mongoose";
 import connectDB from "./db/index.js";
+import express from "express";
+import { app } from "./app.js";
 
 import dotenv from "dotenv";
-// require("dotenv").config({ path: "./.env" });
+
 
 dotenv.config({ path: "./.env" });
 console.log(process.env);
@@ -16,4 +18,4 @@ connectDB()
   })
   .catch((err) => {
     console.log("MONGO db connection failed !!!", err);
-  });
+  });.
